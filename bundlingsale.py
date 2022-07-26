@@ -4,8 +4,8 @@ import numpy as np
 from random import shuffle
 
 for i in range(15):
-  n = randint(2,1e4)
-  m = randint(1,min(n-1,1e3))
+  n = randint(2,3.6e3)
+  m = randint(1,min(n-1,3e3))
   dat = IO(input_file=f'bundlingsale/input/input{str(i).zfill(2)}.txt',output_file=f'bundlingsale/output/output{str(i).zfill(2)}.txt')
   price = np.random.randint(1,500, n)
   volume = np.random.randint(1,500, n)
